@@ -1,4 +1,4 @@
 #pragma once
 #include<stdint.h>
 
-uint64_t calcFuel(int mass);
+int64_t calcFuel(int mass);
