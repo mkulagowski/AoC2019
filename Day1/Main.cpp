@@ -1,15 +1,12 @@
-#include "Day1.hpp"
-
+#pragma warning(disable: 5050)
 import std.core;
 import utils;
+import day1;
 
 constexpr auto FILEPATH = "./input.txt";
 
-int main()
+void part1(const std::vector<int64_t>& inputTable)
 {
-	std::string input = readFileToString(FILEPATH);
-	std::vector<int64_t> inputTable = splitStringToInt<'\n'>(input);
-
 	uint64_t fuelNeeded = 0;
 	for (const auto& i : inputTable)
 	{
@@ -19,8 +16,11 @@ int main()
 	}
 
 	std::cout << "Part1 answer: " << fuelNeeded << std::endl;
+}
 
-	fuelNeeded = 0;
+void part2(const std::vector<int64_t>& inputTable)
+{
+	uint64_t fuelNeeded = 0;
 	for (const auto& i : inputTable)
 	{
 		int64_t fuel = calcFuel(i);
@@ -31,6 +31,15 @@ int main()
 		} while (fuel > 0);
 	}
 	std::cout << "Part2 answer: " << fuelNeeded << std::endl;
+}
+
+int main()
+{
+	std::string input = readFileToString(FILEPATH);
+	std::vector<int64_t> inputTable = splitStringToInt(input, '\n');
+
+	part1(inputTable);
+	part2(inputTable);
 
 	int n;
 	std::cin >> n;
