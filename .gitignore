@@ -1,0 +1,5 @@
+Bin/
+*.vcxproj.filters
+*.vcxproj.user
+*.ifc
+.vs/

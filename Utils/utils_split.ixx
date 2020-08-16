@@ -1,13 +1,10 @@
-#pragma once
-#include <filesystem>
-#include <string>
+#pragma warning(disable: 5050)
+export module utils.split;
 
-namespace InputManager
-{
-std::string readFileToString(std::filesystem::path path);
-std::vector<char> readFileToCharBuffer(std::filesystem::path path);
-template<char delim>
-std::vector<int64_t> splitStringToInt(const std::string& str)
+import std.core;
+
+export template<char delim>
+ std::vector<int64_t> splitStringToInt(const std::string& str)
 {
 	std::vector<int64_t> results;
 	results.reserve(str.size());
@@ -25,8 +22,8 @@ std::vector<int64_t> splitStringToInt(const std::string& str)
 	}
 	return std::move(results);
 }
-template<char delim>
-std::vector<std::string> splitString(const std::string& str)
+export template<char delim>
+ std::vector<std::string> splitString(const std::string& str)
 {
 	std::vector<std::string> results;
 	results.reserve(str.size());
@@ -44,4 +41,3 @@ std::vector<std::string> splitString(const std::string& str)
 	}
 	return std::move(results);
 }
-} //InputManager
