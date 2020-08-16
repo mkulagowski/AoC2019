@@ -7,34 +7,58 @@
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd;ixx</Extensions>
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Commands">
+      <UniqueIdentifier>{ad61e482-1016-48ce-ae8a-c42724f3d30d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utils.ixx">
+    <ClCompile Include="UtilsFs.ixx">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_fs.ixx">
+    <ClCompile Include="UtilsIo.ixx">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_io.ixx">
+    <ClCompile Include="UtilsSplit.ixx">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_split.ixx">
+    <ClCompile Include="Utils.ixx">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_fs_impl.cpp">
+    <ClCompile Include="UtilsFsImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_io_impl.cpp">
+    <ClCompile Include="UtilsIoImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="utils_split_impl.cpp">
+    <ClCompile Include="UtilsSplitImpl.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeComp.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCreator.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCompImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCreatorImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCmd.ixx">
+      <Filter>Header Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCmdAdd.ixx">
+      <Filter>Header Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="IntcodeCmdMult.ixx">
+      <Filter>Header Files\Commands</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -35,14 +35,13 @@ void part2(const std::vector<int64_t>& inputTable)
 
 int main()
 {
-	std::string input = readFileToString(FILEPATH);
+	const std::string input = readFileToString(FILEPATH);
 	std::vector<int64_t> inputTable = splitStringToInt(input, '\n');
 
 	part1(inputTable);
 	part2(inputTable);
 
-	int n;
-	std::cin >> n;
+	wait();
 	
 	return 0;
 }

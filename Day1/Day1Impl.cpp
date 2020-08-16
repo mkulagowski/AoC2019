@@ -3,7 +3,7 @@ module day1;
 
 import std.core;
 
-const int64_t calcFuel(int64_t mass)
+const int64_t calcFuel(const int64_t mass)
 {
 	return (mass / 3) - 2;
 }

@@ -23,11 +23,20 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day1Impl.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\Utils\IntcodeCmd.ixx">
+      <Filter>Header Files\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\Utils\IntcodeCmdAdd.ixx">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\IntcodeCmdMult.ixx">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\IntcodeComp.ixx">
+      <Filter>Header Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utils\IntcodeCreator.ixx">
+      <Filter>Header Files\Utils</Filter>
     </ClCompile>
     <ClCompile Include="..\Utils\Utils.ixx">
       <Filter>Header Files\Utils</Filter>
@@ -41,8 +50,8 @@
     <ClCompile Include="..\Utils\UtilsSplit.ixx">
       <Filter>Header Files\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="Day1.ixx">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

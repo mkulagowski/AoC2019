@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A5F8A89F-A9EF-4BB3-B418-0E1EAF495FE8}</ProjectGuid>
-    <RootNamespace>Day1</RootNamespace>
+    <ProjectGuid>{662CC1A7-20B6-44ED-AE81-FEB912AA9793}</ProjectGuid>
+    <RootNamespace>Day2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -154,17 +154,16 @@
     <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Utils\IntcodeCmd.ixx" />
+    <ClCompile Include="..\Utils\IntcodeCmdAdd.ixx" />
+    <ClCompile Include="..\Utils\IntcodeCmdMult.ixx" />
+    <ClCompile Include="..\Utils\IntcodeComp.ixx" />
+    <ClCompile Include="..\Utils\IntcodeCreator.ixx" />
     <ClCompile Include="..\Utils\Utils.ixx" />
     <ClCompile Include="..\Utils\UtilsFs.ixx" />
     <ClCompile Include="..\Utils\UtilsIo.ixx" />
     <ClCompile Include="..\Utils\UtilsSplit.ixx" />
-    <ClCompile Include="Day1Impl.cpp" />
     <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Day1.ixx">
-      <FileType>Document</FileType>
-    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
