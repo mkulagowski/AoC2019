@@ -1,9 +1,0 @@
-#pragma warning(disable: 5050)
-module day2;
-
-import std.core;
-
-const int64_t calcFuel(int64_t mass)
-{
-	return (mass / 3) - 2;
-}
