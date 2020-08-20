@@ -6,19 +6,14 @@ import std.core;
 
 export enum class OpCode : int64_t
 {
-	ADD = 1,
+	ADD  = 1,
 	MULT = 2,
+	END  = 99
 };
 
-export class Command
+export class ICommand
 {
-protected:
-	Intcode* mComputer;
-
 public:
-	Command() {};
-
-	virtual void init(const std::size_t memPtr) {};
-	virtual const uint8_t getSize() const { return 1; };
-	virtual bool execute() const { return false; };
+	using CommandResult = std::pair<bool, uint8_t>;
+	virtual const CommandResult execute(const std::size_t memPos, Intcode* comp) const = 0;
 };

@@ -54,10 +54,7 @@
     <ClCompile Include="IntcodeCmd.ixx">
       <Filter>Header Files\Commands</Filter>
     </ClCompile>
-    <ClCompile Include="IntcodeCmdAdd.ixx">
-      <Filter>Header Files\Commands</Filter>
-    </ClCompile>
-    <ClCompile Include="IntcodeCmdMult.ixx">
+    <ClCompile Include="IntcodeCmds.ixx">
       <Filter>Header Files\Commands</Filter>
     </ClCompile>
   </ItemGroup>

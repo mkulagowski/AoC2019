@@ -12,8 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IntcodeCmd.ixx" />
-    <ClCompile Include="IntcodeCmdAdd.ixx" />
-    <ClCompile Include="IntcodeCmdMult.ixx" />
+    <ClCompile Include="IntcodeCmds.ixx" />
     <ClCompile Include="IntcodeComp.ixx" />
     <ClCompile Include="IntcodeCompImpl.cpp" />
     <ClCompile Include="IntcodeCreator.ixx" />

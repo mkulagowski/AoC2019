@@ -155,8 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Utils\IntcodeCmd.ixx" />
-    <ClCompile Include="..\Utils\IntcodeCmdAdd.ixx" />
-    <ClCompile Include="..\Utils\IntcodeCmdMult.ixx" />
+    <ClCompile Include="..\Utils\IntcodeCmds.ixx" />
     <ClCompile Include="..\Utils\IntcodeComp.ixx" />
     <ClCompile Include="..\Utils\IntcodeCreator.ixx" />
     <ClCompile Include="..\Utils\Utils.ixx" />

@@ -31,10 +31,11 @@ void Intcode::execute()
 	bool isRunning = true;
 	while (isRunning)
 	{
-		const int64_t currVal = mMemory[mPos++];
-		std::unique_ptr<Command> cmd = createCommand(currVal, this);
-		cmd->init(mPos);
-		isRunning = cmd->execute();
-		mPos += cmd->getSize();
+		const int64_t cmdOpCode = mMemory[mPos++];
+		std::unique_ptr<ICommand> cmd = createCommand(cmdOpCode);
+		const auto [shouldExit, cmdSize] = cmd->execute(mPos, this);
+
+		isRunning = shouldExit;
+		mPos += cmdSize;
 	}
 }
