@@ -17,9 +17,11 @@
     <ClCompile Include="IntcodeCompImpl.cpp" />
     <ClCompile Include="IntcodeCreator.ixx" />
     <ClCompile Include="IntcodeCreatorImpl.cpp" />
+    <ClCompile Include="Point.cpp" />
     <ClCompile Include="UtilsFsImpl.cpp" />
     <ClCompile Include="UtilsIoImpl.cpp" />
     <ClCompile Include="UtilsSplitImpl.cpp" />
+    <ClCompile Include="Point.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Utils.ixx">

@@ -57,5 +57,11 @@
     <ClCompile Include="IntcodeCmds.ixx">
       <Filter>Header Files\Commands</Filter>
     </ClCompile>
+    <ClCompile Include="Point.ixx">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
