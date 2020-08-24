@@ -11,8 +11,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utils", "Utils\Utils.vcxproj", "{BF8C8FF6-4DCA-4FE2-A6BF-A9C0EB116FE6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day2", "Day2\Day2.vcxproj", "{662CC1A7-20B6-44ED-AE81-FEB912AA9793}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF8C8FF6-4DCA-4FE2-A6BF-A9C0EB116FE6} = {BF8C8FF6-4DCA-4FE2-A6BF-A9C0EB116FE6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day3", "Day3\Day3.vcxproj", "{B35BCD42-B9F4-4379-A70D-8A194FA3A587}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF8C8FF6-4DCA-4FE2-A6BF-A9C0EB116FE6} = {BF8C8FF6-4DCA-4FE2-A6BF-A9C0EB116FE6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
